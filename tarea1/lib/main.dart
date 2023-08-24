@@ -56,14 +56,16 @@ class CardContainer extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             User(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text('   123 Main Street', textAlign: TextAlign.left,),
-                Text('(415)555-0198   ', textAlign: TextAlign.left,),
-              ]
+            Padding(
+              padding: EdgeInsets.only(left: 10, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text('123 Main Street', textAlign: TextAlign.left,),
+                  Text('(415)555-0198', textAlign: TextAlign.left,),
+                ]
+              ),
             ),
-            // IconRow(),
             IconButtonRow(title: 'Icon Row'),
           ],
         ),
